@@ -1,0 +1,3 @@
+#!/bin/sh
+exec ssh $(hwdb ip | grep cobbler-1.ams1| awk '{ print $5 }')
+

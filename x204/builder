@@ -1,0 +1,2 @@
+#!/bin/sh
+exec ssh x10486.rz2012
