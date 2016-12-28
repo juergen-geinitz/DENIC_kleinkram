@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ $# -eq 0 ]
+then
+	echo "usage: $0 logfile"
+	exit 1
+fi
+#
+sed 's/^Paused: press any key to continue, or .q. to quit \+//' < $1  | \
+tr -d '\r' | \
+tr -d '' | \
+sed -e :a -e '$!N;s/\n \+//;ta' -e 'P;D'
