@@ -1,3 +1,0 @@
-#!/bin/sh
-exec ssh -t x204 sh -c /home/juergen1/bin/cobbf
-
